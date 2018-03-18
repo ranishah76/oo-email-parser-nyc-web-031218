@@ -4,5 +4,19 @@
 # or whitespace (' ').
 
 
-require "spec_helper"
-require 'pry'
+class EmailParser
+
+  attr_reader :emails
+
+  def initialize(emails)
+    emails = emails
+  end
+
+  def parse
+    email.split.map do |email|
+      email.split(",")
+    end.flatten.uniq
+  end
+end 
+
+end
