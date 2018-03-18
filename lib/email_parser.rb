@@ -17,7 +17,11 @@ class EmailParser
   binding.pry
 
       email.split(",")
+      binding.pry
     end.flatten.uniq
+    binding.pry
+
+
   end
 
 
