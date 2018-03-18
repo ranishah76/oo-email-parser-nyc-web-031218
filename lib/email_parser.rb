@@ -15,7 +15,7 @@ class EmailParser
   def parse
     emails.split.map do |email|
   binding.pry
-      
+
       email.split(",")
     end.flatten.uniq
   end
